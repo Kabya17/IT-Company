@@ -36,10 +36,10 @@ const Contact = () => {
             <div className="my-5">
                 <h1 className="text-center"> Contact Us </h1>
             </div>
-            <div className="container contact_div" style={{ marginBottom: '4rem' }}>
+            <div className="container contact_div">
                 <div className="row">
                     <div className="col-md-6 col-10 mx-auto">
-                        <form onSubmit={formSubmit}>
+                        <form onSubmit={formSubmit} style={{ marginBottom: '2rem' }}>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Enter your name" />
